@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>L. Ravi Kiran</title><meta content="" name="keywords"/><meta content="" name="description"/><link rel="stylesheet" href="/css/global.css"/><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"/><link rel="stylesheet" href="/lib/ionicons/css/ionicons.min.css"/><link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.min.css"/><link rel="stylesheet" href="/lib/magnific-popup/magnific-popup.css"/><link rel="stylesheet" href="/lib/hover/hover.min.css"/><!-- Main Stylesheet File --><link rel="stylesheet" href="/css/style.css"/><!-- Responsive css --><link rel="stylesheet" href="/css/responsive.css"/><!-- Favicon icon --><link rel="shortcut icon" href="images/favicon.png"/><!--=======================================================--><!--Theme Name: Folio--><!--Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/--><!--Author: BootstrapMade.com--><!--Author URL: https://bootstrapmade.com--><!--=======================================================--></head><body><header><nav id="main-nav"><div class="row"><div class="container"><div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"/></a></div><div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div><ul class="nav-menu list-unstyled"><li><a href="#header" class="smoothScroll">Home</a></li><li><a href="#about" class="smoothScroll">About</a></li><li><a href="#portfolio" class="smoothScroll">Portfolio</a></li><li><a href="#contact" class="smoothScroll">Contact</a></li></ul></div></div></nav><div id="header" class="home"><div class="container"><div class="header-content"><h1>I'm<span class="typed"></span></h1><p>Frontend Developer, Scrum Master, Project Manager</p><ul class="list-unstyled list-social"><li><a href="#"><i class="ion-social-facebook"></i></a></li><li><a href="#"><i class="ion-social-twitter"></i></a></li><li><a href="#"><i class="ion-social-instagram"></i></a></li><li><a href="#"><i class="ion-social-linkedin"></i></a></li></ul></div></div></div></header><main><h1>Owl Carousel 2</h1><p>Touch enabled <a href="https://jquery.com/">jQuery</a> plugin that lets you create a beautiful, responsive carousel slider. <strong>To get started, check out <a href="https://owlcarousel2.github.io/OwlCarousel2/">https://owlcarousel2.github.io/OwlCarousel2/</a>.</strong></p>
+<h2>Quick start</h2><h3>Install</h3><p>This package can be installed with:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/owl.carousel">npm</a>: <code>npm install --save owl.carousel</code> or <code>yarn add owl.carousel jquery</code></li>
+<li><a href="http://bower.io/search/?q=owl.carousel">bower</a>: <code>bower install --save owl.carousel</code></li>
+</ul>
+<p>Or download the <a href="https://github.com/OwlCarousel2/OwlCarousel2/releases">latest release</a>.</p>
+<h3>Load</h3><h4>Webpack</h4><p>Add jQuery via the &quot;webpack.ProvidePlugin&quot; to your webpack configuration:</p>
+<pre><code>const webpack = require(&#39;webpack&#39;);
+
+//...
+plugins: [
+    new webpack.ProvidePlugin({
+      $: &#39;jquery&#39;,
+      jQuery: &#39;jquery&#39;,
+      &#39;window.jQuery&#39;: &#39;jquery&#39;
+    }),
+],
+//...</code></pre><p>Load the required stylesheet and JS:</p>
+<pre><code class="language-js">import &#39;owl.carousel/dist/assets/owl.carousel.css&#39;;
+import &#39;owl.carousel&#39;;</code></pre>
+<h4>Static HTML</h4><p>Put the required stylesheet at the <a href="https://developer.yahoo.com/performance/rules.html#css_top">top</a> of your markup:</p>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/node_modules/owl.carousel/dist/assets/owl.carousel.min.css&quot; /&gt;</code></pre>
+<pre><code class="language-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/bower_components/owl.carousel/dist/assets/owl.carousel.min.css&quot; /&gt;</code></pre>
+<p><strong>NOTE:</strong> If you want to use the default navigation styles, you will also need to include <code>owl.theme.default.css</code>.</p>
+<p>Put the script at the <a href="https://developer.yahoo.com/performance/rules.html#js_bottom">bottom</a> of your markup right after jQuery:</p>
+<pre><code class="language-html">&lt;script src=&quot;/node_modules/jquery/dist/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/node_modules/owl.carousel/dist/owl.carousel.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<pre><code class="language-html">&lt;script src=&quot;/bower_components/jquery/dist/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/bower_components/owl.carousel/dist/owl.carousel.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<h3>Usage</h3><p>Wrap your items (<code>div</code>, <code>a</code>, <code>img</code>, <code>span</code>, <code>li</code> etc.) with a container element (<code>div</code>, <code>ul</code> etc.). Only the class <code>owl-carousel</code> is mandatory to apply proper styles:</p>
+<pre><code class="language-html">&lt;div class=&quot;owl-carousel owl-theme&quot;&gt;
+  &lt;div&gt; Your Content &lt;/div&gt;
+  &lt;div&gt; Your Content &lt;/div&gt;
+  &lt;div&gt; Your Content &lt;/div&gt;
+  &lt;div&gt; Your Content &lt;/div&gt;
+  &lt;div&gt; Your Content &lt;/div&gt;
+  &lt;div&gt; Your Content &lt;/div&gt;
+  &lt;div&gt; Your Content &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><strong>NOTE:</strong> The <code>owl-theme</code> class is optional, but without it, you will need to style navigation features on your own.</p>
+<p>Call the <a href="https://learn.jquery.com/plugins/">plugin</a> function and your carousel is ready.</p>
+<pre><code class="language-javascript">$(document).ready(function(){
+  $(&#39;.owl-carousel&#39;).owlCarousel();
+});</code></pre>
+<h2>Documentation</h2><p>The documentation, included in this repo in the root directory, is built with <a href="http://assemble.io/">Assemble</a> and publicly available at <a href="https://owlcarousel2.github.io/OwlCarousel2/">https://owlcarousel2.github.io/OwlCarousel2/</a>. The documentation may also be run locally.</p>
+<h2>Building</h2><p>This package comes with <a href="http://gruntjs.com/">Grunt</a> and <a href="http://bower.io/">Bower</a>. The following tasks are available:</p>
+<ul>
+<li><code>default</code> compiles the CSS and JS into <code>/dist</code> and builds the doc.</li>
+<li><code>dist</code> compiles the CSS and JS into <code>/dist</code> only.</li>
+<li><code>watch</code> watches source files and builds them automatically whenever you save.</li>
+<li><code>test</code> runs <a href="http://www.jshint.com/">JSHint</a> and <a href="http://qunitjs.com/">QUnit</a> tests headlessly in <a href="http://phantomjs.org/">PhantomJS</a>.</li>
+</ul>
+<p>To define which plugins are build into the distribution just edit <code>/_config.json</code> to fit your needs.</p>
+<h2>Contributing</h2><p>Please read <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<h2>Roadmap</h2><p>Please make sure to check out our <a href="https://github.com/OwlCarousel2/OwlCarousel2/issues/1756">Roadmap Discussion</a>.</p>
+<h2>License</h2><p>The code and the documentation are released under the <a href="LICENSE">MIT License</a>.</p></main><footer><div id="footer" class="text-center"><div class="container"><div class="socials-media text-center"><ul class="list-unstyled"><li><a href="#"><i class="ion-social-facebook"></i></a></li><li><a href="#"><i class="ion-social-twitter"></i></a></li><li><a href="#"><i class="ion-social-instagram"></i></a></li><li><a href="#"><i class="ion-social-linkedin"></i></a></li></ul></div><p>&copy; Copyrights Folio. All rights reserved.</p><div class="credits">All the links in the footer should remain intact. You can delete the links only if you purchased the pro version. Licensing information: https://bootstrapmade.com/license/ <br/>Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio <br/><br/><br/>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> </div></div></div><script src="/lib/jquery/jquery.min.js"></script><script src="/lib/jquery/jquery-migrate.min.js"></script><script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script><script src="/lib/typed/typed.js"></script><script src="/lib/owlcarousel/owl.carousel.min.js"></script><script src="/lib/magnific-popup/magnific-popup.min.js"></script><script src="/lib/isotope/isotope.pkgd.min.js"></script><!--  Contact Form JavaScript File--><script src="/contactform/contactform.js"></script><!--  Template Main JavaScript File--><script src="/js/main.js"></script></footer></body></html>

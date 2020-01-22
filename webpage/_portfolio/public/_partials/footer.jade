@@ -1,11 +1,41 @@
-| Powered by
-= ' '
-a(href="https://github.com/jvandemo/hb-bootstrap") hb-bootstrap
-= ' '
-| for
-= ' '
-a(href="http://harpjs.com") Harp
-= ' '
-| by
-= ' '
-a(href="http://www.jvandemo.com") Jurgen Van de Moere
+.text-center#footer
+    .container
+        .socials-media.text-center
+            ul.list-unstyled
+                li
+                    a(href="#")
+                        i.ion-social-facebook
+                li
+                    a(href="#")
+                        i.ion-social-twitter
+                li
+                    a(href="#")
+                        i.ion-social-instagram
+                li
+                    a(href="#")
+                        i.ion-social-linkedin
+
+
+
+        p &copy; Copyrights Folio. All rights reserved.
+        .credits
+            | All the links in the footer should remain intact. You can delete the links only if you purchased the pro version. Licensing information: https://bootstrapmade.com/license/ <br/>
+            = ''
+            | Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio <br/><br/><br/>
+            = ''
+            | Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            = ' '
+
+script(src='#{baseUrl}/lib/jquery/jquery.min.js')
+script(src='#{baseUrl}/lib/jquery/jquery-migrate.min.js')
+script(src='#{baseUrl}/lib/bootstrap/js/bootstrap.bundle.min.js')
+script(src='#{baseUrl}/lib/typed/typed.js')
+script(src='#{baseUrl}/lib/owlcarousel/owl.carousel.min.js')
+script(src='#{baseUrl}/lib/magnific-popup/magnific-popup.min.js')
+script(src='#{baseUrl}/lib/isotope/isotope.pkgd.min.js')
+
+//  Contact Form JavaScript File
+script(src='#{baseUrl}/contactform/contactform.js')
+
+//  Template Main JavaScript File
+script(src='#{baseUrl}/js/main.js')
