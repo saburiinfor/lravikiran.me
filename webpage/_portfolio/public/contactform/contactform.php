@@ -7,12 +7,13 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 if($_POST) {
 
-    $name = trim(stripslashes($_POST['contactName']));
-    $email = trim(stripslashes($_POST['contactEmail']));
-    $subject = trim(stripslashes($_POST['contactSubject']));
-    $contact_message = trim(stripslashes($_POST['contactMessage']));
+    $name = trim(stripslashes($_POST['name']));
+    $email = trim(stripslashes($_POST['email']));
+    $subject = trim(stripslashes($_POST['subject']));
+    $contact_message = trim(stripslashes($_POST['message']));
     $authorized_email = 'lravik.saburi@gmail.com';
     $error = [];
+    $message = "";
 
     // Check Name
     if (strlen($name) < 2) {
@@ -47,12 +48,9 @@ if($_POST) {
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-
     if (!$error) {
-
         ini_set("sendmail_from", $siteOwnersEmail); // for windows server
         $mail = mail($siteOwnersEmail, $subject, $message, $headers);
-//        $mail = true;
 
         if ($mail) { echo "OK"; }
         else { echo "Something went wrong. Please try again."; }
@@ -70,5 +68,4 @@ if($_POST) {
     } # end if - there was a validation error
 
 }
-
 ?>
